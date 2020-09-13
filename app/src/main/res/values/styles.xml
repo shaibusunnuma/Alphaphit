@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,6 +9,10 @@
 
     <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.DayNight.ActionBar">
         <item name="colorControlNormal">@color/toolbar_color_control_normal</item>
+    </style>
+
+    <style name="ButtonBackground" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="colorPrimary">@color/colorAccent</item>
     </style>
 
 </resources>

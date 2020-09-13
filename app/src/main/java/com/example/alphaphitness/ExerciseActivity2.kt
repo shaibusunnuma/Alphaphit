@@ -15,8 +15,8 @@ import kotlinx.android.synthetic.main.quit_dialog.*
 import java.util.*
 
 class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
-    private var exerciseTimerDuration: Long = 10000
-    private var resTimerDuration: Long = 5000
+    private var exerciseTimerDuration: Long = 30000
+    private var resTimerDuration: Long = 10000
     private var timerDuration: Long = resTimerDuration
     private var restTimer: CountDownTimer? = null
     private var rest:Boolean = false
@@ -90,7 +90,7 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {//check if exercises are finished
-                if(currentExercisePosistion >= 0){
+                if(currentExercisePosistion >= totalExercises-1){
                     finish()
                     startActivity(Intent(this@ExerciseActivity2, FinishActivity::class.java))
                 }
