@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AlphaPhitness</string>
+    <string name="image">image</string>
+    <string name="str_start">START</string>
+    <string name="getReady">GET READY FOR</string>
+    <string name="upcoming_exercise">UPCOMING EXERCISE:</string>
+    <string name="next_exercise">Next Exercise</string>
+    <string name="quit_prompt">You have not completed the workout yet.\nAre you sure you want to quit</string>
+</resources>
