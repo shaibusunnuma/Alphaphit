@@ -100,7 +100,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:visibility="gone"
+            tools:visibility="visible"
             android:layout_gravity="center">
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -108,7 +110,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp">
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/feet"
@@ -125,7 +126,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginTop="10dp"
+
                 android:layout_marginStart="5dp">
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/inch"
@@ -190,7 +191,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/results"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:theme="@style/ButtonBackground"
         android:text="calculate"
         android:textColor="@color/colorWhite"
