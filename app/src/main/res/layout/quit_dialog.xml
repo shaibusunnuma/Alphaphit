@@ -40,7 +40,7 @@
             android:gravity="center"
             android:text="yes"
             android:textColor="@color/colorWhite"
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
         <Button
             style="?android:attr/buttonBarButtonStyle"
             android:theme="@style/ButtonBackground"
@@ -53,8 +53,7 @@
             android:background="@color/colorAccent"
             android:text="no"
             android:textColor="@color/colorWhite"
-
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </LinearLayout>
