@@ -21,7 +21,7 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var restTimer: CountDownTimer? = null
     private var rest:Boolean = false
     private var exerciseList:ArrayList<ExerciseModel>? = null
-    private var currentExercisePosistion = -1
+    private var currentExercisePosition = -1
     private var totalExercises :Int = 0
     private var tts: TextToSpeech?= null
     private var player : MediaPlayer? = null
@@ -42,9 +42,9 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         tts = TextToSpeech(this,this)//not working
 
-        exerciseList = Exercises.defaulteExerciseList()
+        exerciseList = Exercises.defaultExerciseList()
         totalExercises = exerciseList!!.size
-        next_exercise.text = exerciseList!![currentExercisePosistion+1].getName()
+        next_exercise.text = exerciseList!![currentExercisePosition+1].getName()
 
         speak("Your workout starts in ten seconds")
         setExerciseView()
@@ -90,7 +90,7 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
 
             override fun onFinish() {//check if exercises are finished
-                if(currentExercisePosistion >= totalExercises-1){
+                if(currentExercisePosition >= totalExercises-1){
                     finish()
                     startActivity(Intent(this@ExerciseActivity2, FinishActivity::class.java))
                 }
@@ -115,8 +115,8 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
             timerDuration = exerciseTimerDuration
 
             //set status for current exercise
-            currentExercisePosistion++
-            currentExercise = exerciseList!![currentExercisePosistion]
+            currentExercisePosition++
+            currentExercise = exerciseList!![currentExercisePosition]
             currentExercise!!.setIsSelected(true)
             exerciseAdaptor!!.notifyDataSetChanged()
             //set up views
@@ -136,7 +136,7 @@ class ExerciseActivity2 : AppCompatActivity(), TextToSpeech.OnInitListener {
             exerciseAdaptor?.notifyDataSetChanged()
             timerDuration = resTimerDuration
             exercise_name.text = getString(R.string.getReady)
-            next_exercise.text = exerciseList!![currentExercisePosistion+1].getName()
+            next_exercise.text = exerciseList!![currentExercisePosition+1].getName()
             exercise_image.visibility = View.GONE
             upcoming_exercise.visibility = View.VISIBLE
             progressBar.max = 10

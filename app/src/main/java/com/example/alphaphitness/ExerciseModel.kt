@@ -17,7 +17,7 @@ class ExerciseModel(
     fun getImage():Int{
         return this.image
     }
-    fun getIsCompelted():Boolean{
+    fun getIsCompleted():Boolean{
         return this.isCompleted
     }
     fun getIsSelected():Boolean{

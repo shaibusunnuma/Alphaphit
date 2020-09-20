@@ -43,8 +43,5 @@ class HistoryActivity : AppCompatActivity() {
             tv_noData.visibility = View.VISIBLE
         }
 
-//        for(i in database){
-//
-//        }
     }
 }

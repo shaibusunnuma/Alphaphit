@@ -21,7 +21,7 @@ class ExerciseStatusAdaptor(val items: ArrayList<ExerciseModel>, val context: Co
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val model: ExerciseModel = items[position]
         holder.tvItem.text = model.getId().toString()
-        if(model.getIsCompelted()){
+        if(model.getIsCompleted()){
             holder.tvItem.background = ContextCompat.getDrawable(context,R.drawable.item_circular_color_accent_bg)
             holder.tvItem.setTextColor(ContextCompat.getColor(context,R.color.colorWhite))
         }

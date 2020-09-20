@@ -2,7 +2,7 @@ package com.example.alphaphitness
 
 class Exercises {
     companion object{
-        fun defaulteExerciseList():ArrayList<ExerciseModel>{
+        fun defaultExerciseList():ArrayList<ExerciseModel>{
             val exerciseList = ArrayList<ExerciseModel>()
             var exercise = ExerciseModel(1,
                 "Jumping Jacks", R.drawable.ic_jumping_jacks,
